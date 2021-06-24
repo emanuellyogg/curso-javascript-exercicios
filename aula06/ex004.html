@@ -23,7 +23,8 @@
     document.write(`Seu nome tem ${nome.length} letras. <br>`); // comando length para contar caracteres.
     document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()} <br>`); // comando toUpperCase() para converter em maiúsculo
     document.write(`Seu nome em minúsculo é ${nome.toLowerCase()} <br>`); // comando toLowerCase() para converter em minúsculo
-    document.write(`Seu salário é: ${salario}`);
+    document.write(`Seu salário é: ${(new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(salario))}`);
+    //formatar number em currency.
   </script>
 </body>
 
