@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu teste</title>
+  <style>
+    body {
+      background-color: darksalmon;
+      font: normal 20pt Arial #fff;
+    }
+
+    div {
+      font: normal 15pt Arial;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Minha primeira calculadora simples</h1>
+
+  <input type="number" id="n1"> X
+  <input type="number" id="n2">
+  <input type="button" value="Multiplicar" id="mtp" onclick="Multiplicar()">
+  <div id="res">Resultado</div>
+
+  <script>
+    function Multiplicar() {
+      var txtnum1 = document.getElementById("n1")
+      var txtnum2 = document.getElementById("n2")
+      var res = document.getElementById("res")
+
+      var num1 = Number(txtnum1.value)
+      var num2 = Number(txtnum2.value)
+      var mult = num1 * num2
+
+      res.innerHTML = `A multiplicação entre ${num1} e ${num2} é <strong>${mult}</strong>`
+    }
+  </script>
+</body>
+
+</html>
