@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nacionalidade</title>
+</head>
+
+<body>
+  <h1>Verificando a nacionalidade</h1>
+
+  Seu páis de origem: <input type="text" id="originp">
+  <input type="button" value="Verificar" onclick="analisar()">
+  <div id="res">
+    <p>Resultado...</p>
+  </div>
+
+  <script>
+    function analisar() {
+      var país = document.querySelector('input#originp').value
+      var nac = document.querySelector('div#res')
+      nac.innerHTML = "Você nasceu em " + país
+      if (país == "Brasil") {
+        nac.innerHTML += "<p>Você é <strong>Brasileiro(a)!</strong></p>"
+      } else {
+        nac.innerHTML += "<p>Você é <strong>Estrangeiro(a)!</strong></p>"
+      }
+    }
+  </script>
+</body>
+
+</html>
