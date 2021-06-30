@@ -6,7 +6,7 @@ function fatorial(n) { //função recursiva, uma função que chama ela mesma
     }
 }
 
-console.log(fatorial(5))
+console.log(fatorial(7))
 
 
 // 5! = 5 x 4 x 3 x 2 x 1 que é a mesma coisa que:
